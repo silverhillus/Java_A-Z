@@ -9,6 +9,8 @@ public class ArrayList_Methods {
         list.add(element)
         list.add(index,element)
         list.set(index,element)
+        list.remove(index)
+        list.remove(object)
 
          */
 
@@ -52,6 +54,39 @@ public class ArrayList_Methods {
         list3.add(2); // 1
         list3.add(3); // 2
         list3.add(4); //3
+
+        System.out.println(list3); // [1, 2, 3, 4]
+
+
+        // list.remove(index) method
+        // list.remove(object) method
+        int a=1; // if it's an integer that means index number
+        list3.remove(a); // the object 2 at index 1 has been removed
+        System.out.println(list3); //[1, 3, 4]
+
+        Integer b=1; // wrapper class so it refers to the object
+        list3.remove(b);
+        System.out.println(list3); // [3, 4] // object 1 found and removed.
+
+
+        ArrayList<Integer> list4 = new ArrayList<>();
+        list4.add(10);
+        list4.add(20);
+        list4.add(30);
+        // {10, 20, 30}
+        //          0    1   2
+
+        // list4.remove(20); // index out of bound
+
+        //  list4.remove(1);  //{10, 30}
+
+        Integer a2 = 100;
+        boolean r1 = list4.remove(a2);  // false
+
+        System.out.println(list4);
+        System.out.println(r1);
+
+
 
 
     }
