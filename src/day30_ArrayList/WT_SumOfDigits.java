@@ -1,4 +1,6 @@
-package day30_CustomClass;
+package day30_ArrayList;
+
+import java.util.Arrays;
 
 public class WT_SumOfDigits {
     /*
@@ -27,6 +29,11 @@ public class WT_SumOfDigits {
     			list ==> {"A", "B", "C", "D", "E", "F", "G"}
      */
     public static void main(String[] args) {
+
+        /*
+        Character.isDigit(each)
+        Character.isAlphabetic(each)
+         */
         String str="a1b2c3";
 
         //solution 1 /ascii table
@@ -52,6 +59,30 @@ public class WT_SumOfDigits {
             }
         }
         System.out.println(sum1);
+
+        //Solution 3 toCharArray
+
+        String str2="a1b2c3";
+        char [] arr=str2.toCharArray();
+        System.out.println(Arrays.toString(arr)); // [a, 1, b, 2, c, 3]
+
+        int sum2=0;
+        for (char each : arr){ // '0' gow do you convert to int?
+            /*
+            boolean idDigit= each>47 && each<58;
+            if (idDigit){
+                //sum+=Integer.parseInt(each) // each is char will give compile error so change it to the string
+                sum2+=Integer.parseInt(""+each);
+            }
+             */
+            if (Character.isDigit(each)){ // isDigit is identifies if the given character is a digit as boolean
+                sum2+=Integer.parseInt(""+each);
+            }
+        }
+        System.out.println(sum2);
+
+        boolean a = Character.isAlphabetic('A');  // identifies if the character is alphebet
+
 
 
 

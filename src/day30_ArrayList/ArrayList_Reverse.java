@@ -2,7 +2,7 @@ package day30_ArrayList;
 
 import java.util.ArrayList;
 
-public class List_Reverse {
+public class ArrayList_Reverse {
     public static void main(String[] args) {
         /*
         2. write a program that can print the list of integers in reversed order
