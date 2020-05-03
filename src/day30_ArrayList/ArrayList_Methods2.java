@@ -17,7 +17,7 @@ public class ArrayList_Methods2 {
 
         boolean r2 = list.remove("A"); // true
 
-        System.out.println(list);
+        System.out.println(list); // [B, C]
         System.out.println(r1);
         System.out.println(r2);
 

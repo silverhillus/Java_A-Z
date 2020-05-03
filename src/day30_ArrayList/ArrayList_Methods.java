@@ -8,7 +8,7 @@ public class ArrayList_Methods {
         ArrayList Methods
         list.add(element)
         list.add(index,element)
-        list.set(index,element)
+        list.set(index,element) // change/update
         list.remove(index)
         list.remove(object)
 
