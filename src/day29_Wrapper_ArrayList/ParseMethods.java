@@ -45,16 +45,20 @@ public class ParseMethods {
 
         String result1 = "TrUE"; //  not "true" or not "false" ==> false
 
-        boolean r1 =Boolean.parseBoolean(result1);   // boolean, false
+        boolean r1 =Boolean.parseBoolean(result1);   // boolean, false //not case sensitive
 
         System.out.println( r1 );
 
 
-        String result2 = "fALsE"; // "false"
+        String result2 = "fALsE"; // "false" //not case sensitive
 
         boolean r2 = Boolean.parseBoolean(result2);
 
         System.out.println(r2);
+
+        String s="Maybe"; //false
+        boolean b=Boolean.parseBoolean(s);
+        System.out.println(b);
 
 
 

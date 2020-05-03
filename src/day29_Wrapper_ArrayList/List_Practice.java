@@ -21,7 +21,7 @@ public class List_Practice {
 
         System.out.println("=========================================");
 
-        for( String each : shoppingList){
+        for( String each : shoppingList){ // this ArrayList comprises of string objects!
             System.out.println(each);
         }
 

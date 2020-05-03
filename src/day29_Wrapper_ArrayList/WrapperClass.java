@@ -27,6 +27,10 @@ public class WrapperClass {
 
         System.out.println(a3);
 
+        int x=10;
+        Integer y=x;
+
+
 
 
 
