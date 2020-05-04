@@ -7,12 +7,11 @@ import java.util.Collections;
 public class MoveZeros2 {
 
     public static void main(String[] args) {
-
         ArrayList<Integer> list = new ArrayList<>();
         list.addAll(Arrays.asList(10, 0, 20, 0, 30, 0, 40, 0, 0, 0) );
         System.out.println(list);
 
-        int count =  Collections.frequency(list, 0);
+      int count =  Collections.frequency(list, 0);
         System.out.println(count);
 
         list.removeAll( Arrays.asList(0) );

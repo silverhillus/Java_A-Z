@@ -4,13 +4,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
 
-    public class Duplicates2 {
+public class Duplicates2 {
 
-        public static void main(String[] args) {
-            ArrayList<String> list = new ArrayList<>();
-            list.addAll(Arrays.asList("A", "B", "A", "C", "D", "D"));
+    public static void main(String[] args) {
+        ArrayList<String> list = new ArrayList<>();
+        list.addAll(Arrays.asList("A", "B", "A", "C", "D", "D"));
 
-            ArrayList<String> result = new ArrayList<>();           //[A, D]
+       ArrayList<String> result = new ArrayList<>();           //[A, D]
 
         /*
         for(String each: list){
@@ -30,27 +30,25 @@ import java.util.Collections;
          */
 
 
-            for(int i=0; i < list.size(); i ++){
+        for(int i=0; i < list.size(); i ++){
 
-                int count = Collections.frequency(list, list.get(i) );
-                if(count > 1 && !result.contains(list.get(i))){
-                    result.add(list.get(i));
-                }
-
+            int count = Collections.frequency(list, list.get(i) );
+            if(count > 1 && !result.contains(list.get(i))){
+                result.add(list.get(i));
             }
-
-            System.out.println(result);
-
-
-
-
-
-
-
-
 
         }
 
+        System.out.println(result);
+
+
+
+
+
+
+
+
+
     }
 
-
+}
