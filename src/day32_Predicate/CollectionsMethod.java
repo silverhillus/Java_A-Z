@@ -33,7 +33,7 @@ public class CollectionsMethod {
 
        Integer maxNum = Collections.max(numbers);  //4
 
-        numbers.removeAll( Arrays.asList(maxNum) );
+        numbers.removeAll( Arrays.asList(maxNum) ); // removeAll because (4,4) 2 maximum numbers
 
         System.out.println(numbers);
 
