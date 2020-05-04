@@ -1,8 +1,9 @@
-package day33;
+package day33_CustomClass;
 
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Collections;
+import java.util.function.Predicate;
 
 public class WT_Uniques {
     /*
@@ -28,6 +29,21 @@ public class WT_Uniques {
            }
        }
         System.out.println(uniques);
+
+       // with Predicate
+        ArrayList<Integer>list2=new ArrayList<>(Arrays.asList(1,1,2,3,4,5,5));
+        Predicate<Integer>duplicate= each-> Collections.frequency(list,each)>1;
+        //list2.addAll(unique); >>accepts collection  / when unique==1
+        //list2.retainAll(unique); >>accepts collection / when unique==1
+        list2.removeIf(duplicate); //keep the uniques
+        System.out.println(list2); // [2, 3, 4]
+
+        ArrayList<Integer>list3=new ArrayList<>(Arrays.asList(1,1,2,3,4,5,5));
+        Predicate<Integer>unique= each-> Collections.frequency(list,each)==1;
+        list3.removeIf(unique); // keep the duplicates
+        System.out.println(list3); // [1, 1, 5, 5]
+
+
 
 
     }

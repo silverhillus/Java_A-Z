@@ -1,8 +1,7 @@
-package day33;
+package day33_CustomClass;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.function.Predicate;
 
 public class WT_Country10 {
@@ -17,8 +16,6 @@ public class WT_Country10 {
         Predicate<String>longerthan10= each -> each.length()>10;
         list.removeIf(longerthan10);
         System.out.println(list); // [Tukey, Brazil, China, Japan, Cambodia]
-
-
     }
 
 }

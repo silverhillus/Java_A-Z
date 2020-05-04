@@ -1,4 +1,4 @@
-package day33;
+package day33_CustomClass;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -31,8 +31,6 @@ public class WT_Duplicated {
 
         boolean result=list.isEmpty();
         System.out.println(result); // true
-
-
 
     }
 }
