@@ -15,7 +15,7 @@ import java.util.Collections;
               3. DO NOT use any sort method
               4. Use predicate and collections methods only
  */
-public class Duplicates {
+public class WT_Duplicated2 {
 
     public static void main(String[] args) {
 
