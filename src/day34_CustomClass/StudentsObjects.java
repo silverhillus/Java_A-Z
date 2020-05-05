@@ -29,13 +29,21 @@ public class StudentsObjects {
         // I wanna remove if gpa<=3.0 so I can print the students who can graduate
         canGraduate.removeIf(p-> p.gpa<=3.0); // p stands for each student objects so I can call gpa by> student.gpa
 
-        System.out.println(canGraduate.size());// 4 so let's repeat 4 times!!
+        System.out.println(canGraduate.size());// 4 so let's repeat by the size of canGraduate times!!
 
         for (int i=0; i<canGraduate.size(); i++){
             Student each=canGraduate.get(i);
             System.out.println("Name: "+each.name+" can graduate!");
         }
         System.out.println("===============");
+        ArrayList<Student> canNotGraduate = new ArrayList<>(  Arrays.asList(students) );
+        canNotGraduate.removeIf( p -> p.gpa > 3.0);
+        System.out.println(canNotGraduate.size());
+
+        for( Student each : canNotGraduate){
+            System.out.println(each.name+" can not graduate");
+        }
+
 
 
 

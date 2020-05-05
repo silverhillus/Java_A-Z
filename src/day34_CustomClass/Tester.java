@@ -6,7 +6,7 @@ public class Tester {
 			Attributes:
 				name, employeeID, JobTitle, Salary
 
-			Actions:
+			Actions://Bank of America
 				setTesterInfo(), smokeTesting(),  creatingTicket();
      */
 
@@ -20,6 +20,9 @@ public class Tester {
         this.employeeID = employeeID;
         this.jobTitle = jobTitle;
         this.salary = salary;
+    }
+    public String toString(){
+        return "Name: "+name+", EmployeeID: "+employeeID+", Job Title: "+jobTitle+", Salary: "+salary;
     }
 
 
