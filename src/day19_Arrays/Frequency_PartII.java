@@ -32,9 +32,6 @@ public class Frequency_PartII {
             result +=   ""+ ch  + count;
 
         }
-
-
-
         System.out.println(result);
 
 
