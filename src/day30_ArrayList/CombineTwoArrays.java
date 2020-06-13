@@ -19,7 +19,7 @@ public class CombineTwoArrays {
         ArrayList<String> list = new ArrayList<>();  //  {"A", "B", "C", "D", "E", "F", "G"}
 
         for(int i=0; i < arr1.length ; i++ ){
-            String eachElement = arr1[i];
+            String eachElement = arr1[i]; // get each element in arr1
             list.add( eachElement );  //arr1[i];
         }
 
