@@ -3,7 +3,7 @@ package OfficeHours.Practice_05_20_2020;
 class test{
 
     public test(String str){
-        System.out.println("String");
+        System.out.println("String_Immutable");
     }
     public test(int a){
         System.out.println("int");
