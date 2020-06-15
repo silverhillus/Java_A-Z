@@ -22,7 +22,7 @@ public class InheritanceReveiw extends B {
 
     public InheritanceReveiw(String a){
          super(19l); //int  long
-        System.out.println("String"); // string
+        System.out.println("String_Immutable"); // string
     }
 
 
